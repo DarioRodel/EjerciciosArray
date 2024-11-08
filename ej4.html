@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numeros = [];
+        let pares = 0;
+        let impares = 0;
+
+        while (true) {
+            let valor = prompt("Introduce un número (0 para terminar):");
+            valor = parseInt(valor);
+            if (isNaN(valor)) {
+                alert("Valor no numérico, termina el ingreso.");
+                break;
+            }
+            if (valor == 0) {
+                break;
+            }
+            numeros.push(valor);
+            if (valor % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+        }
+
+        alert('Array ingesada :' + numeros);
+        alert('Pares: ' + pares + ',' + 'Impares: ' + impares);
+
+    </script>
+</body>
+
+</html>

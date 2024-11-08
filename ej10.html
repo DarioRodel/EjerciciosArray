@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function precio(producto) {
+            if (producto == "monitor") {
+                return 200;
+            } else if (producto == "teclado") {
+                return 20;
+            } else if (producto == "ratón") {
+                return 10;
+            } else {
+                return "Producto no disponible";
+            }
+        }
+
+        alert(precio("monitor"));
+        alert(precio("teclado"));
+        alert(precio("ratón"));
+        alert(precio("impresora"));
+    </script>
+</body>
+
+</html>

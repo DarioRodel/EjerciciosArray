@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function min(array, tipo) {
+            let minValor = array[0];
+            let minIndice = 0;
+
+            for (let i = 1; i < array.length; i++) {
+                if (array[i] < minValor) {
+                    minValor = array[i];
+                    minIndice = i;
+                }
+            }
+
+            if (tipo == 'v') {
+                return minValor;
+            } else if (tipo == 'i') {
+                return minIndice;
+            }
+        }
+        alert(min([4, 5, 7], 'v'));
+        alert(min([4, 5, 7], 'i')); 
+    </script>
+</body>
+
+</html>
